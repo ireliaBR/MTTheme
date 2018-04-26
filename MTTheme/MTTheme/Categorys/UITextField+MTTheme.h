@@ -13,4 +13,7 @@
                           moduleName:(nonnull NSString *)moduleName;
 - (void)theme_setTextIdentifier:(nonnull NSString *)identifier
                      moduleName:(nonnull NSString *)moduleName;
+
+- (void)theme_setPlaceholderIdentifier:(nonnull NSString *)identifier
+                      moduleName:(nonnull NSString *)moduleName;
 @end

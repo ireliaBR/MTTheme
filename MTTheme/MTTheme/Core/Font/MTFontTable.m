@@ -63,7 +63,7 @@
 }
 
 - (void)refreshElementModelTextWithTextDict:(NSDictionary<NSString *,NSString *> *)textDict {
-    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+//    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
         [self executeElementWithElementModels:self.textElements handler:^(MTElementModel *element) {
             NSString *textValue = textDict[element.identifier];
             if (textValue == nil) {
@@ -72,7 +72,7 @@
             
             [MTThemePerformSelector performSelector:element.selector view:element.view object:textValue extendObj:element.extendObj];
         }];
-    } completion:nil];
+//    } completion:nil];
 }
 
 #pragma mark - Private

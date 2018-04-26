@@ -78,7 +78,7 @@
 }
 
 - (void)refreshElementModelColorWithColorDict:(NSDictionary<NSString *,NSString *> *)colorDict {
-    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+//    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
         [self executeElementWithElementModels:self.colorElements handler:^(MTElementModel *element) {
             NSString *colorValue = colorDict[element.identifier];
             if (colorValue == nil) {
@@ -89,13 +89,13 @@
             
             [MTThemePerformSelector performSelector:element.selector view:element.view object:MTTheme_UIColorFromRGB(color) extendObj:element.extendObj];
         }];
-    } completion:nil];
+//    } completion:nil];
 }
 
 - (void)refreshElementModelImageWithImageStrs:(NSArray<NSString *> *)imageStrs
                                    bundlePath:(NSString *)bundlePath
                                    moduleName:(NSString *)moduleName {
-    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+//    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
         [self executeElementWithElementModels:self.imageElements handler:^(MTElementModel *element) {
             if (![imageStrs containsObject:element.identifier]) {
                 return;
@@ -105,7 +105,7 @@
             
             [MTThemePerformSelector performSelector:element.selector view:element.view object:image extendObj:element.extendObj];
         }];
-    } completion:nil];
+//    } completion:nil];
 }
 
 #pragma mark - Private

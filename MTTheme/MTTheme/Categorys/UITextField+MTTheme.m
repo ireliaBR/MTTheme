@@ -27,4 +27,9 @@
                      moduleName:(NSString *)moduleName {
     [MTThemeBlock textPickerWithView:self selector:@selector(setText:) moduleName:moduleName identifier:identifier extendObj:nil];
 }
+
+- (void)theme_setPlaceholderIdentifier:(NSString *)identifier
+                            moduleName:(NSString *)moduleName {
+    [MTThemeBlock textPickerWithView:self selector:@selector(setPlaceholder:) moduleName:moduleName identifier:identifier extendObj:nil];
+}
 @end
