@@ -76,7 +76,7 @@ MTTheme
 ## 使用方式
 1. pod导入
 ```ruby
-	pod 'MTTheme', git => 'https://github.com/ireliaBR/MTTheme.git'
+    pod 'MTTheme'
 ```
 2. 初始化
 
@@ -159,8 +159,8 @@ MTTheme
 1. 环境：
 
 ```objc
-	设备：iphone6 plus
-	系统：iOS 11.3
+    设备：iphone6 plus
+    系统：iOS 11.3
 ```
 	
 2. 在Font2的 `homepage.plist` 下添加了1500条记录，在Theme2下 `color.plist` 添加了1500条记录和3000张图片
