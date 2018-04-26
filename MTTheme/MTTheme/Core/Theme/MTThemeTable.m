@@ -78,34 +78,34 @@
 }
 
 - (void)refreshElementModelColorWithColorDict:(NSDictionary<NSString *,NSString *> *)colorDict {
-    [self executeElementWithElementModels:self.colorElements handler:^(MTElementModel *element) {
-        NSString *colorValue = colorDict[element.identifier];
-        if (colorValue == nil) {
-            return;
-        }
-        int color;
-        sscanf(colorValue.UTF8String, "%i", &color);
-        
-        [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+        [self executeElementWithElementModels:self.colorElements handler:^(MTElementModel *element) {
+            NSString *colorValue = colorDict[element.identifier];
+            if (colorValue == nil) {
+                return;
+            }
+            int color;
+            sscanf(colorValue.UTF8String, "%i", &color);
+            
             [MTThemePerformSelector performSelector:element.selector view:element.view object:MTTheme_UIColorFromRGB(color) extendObj:element.extendObj];
-        } completion:nil];
-    }];
+        }];
+    } completion:nil];
 }
 
 - (void)refreshElementModelImageWithImageStrs:(NSArray<NSString *> *)imageStrs
                                    bundlePath:(NSString *)bundlePath
                                    moduleName:(NSString *)moduleName {
-    [self executeElementWithElementModels:self.imageElements handler:^(MTElementModel *element) {
-        if (![imageStrs containsObject:element.identifier]) {
-            return;
-        }
-        NSString *imagePath = [moduleName stringByAppendingPathComponent:element.identifier];
-        UIImage *image = [UIImage imageNamed:imagePath inBundle:[NSBundle bundleWithPath:bundlePath] compatibleWithTraitCollection:nil];
-        
-        [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+    [UIView animateKeyframesWithDuration:MTTheme_animatedDuration delay:0 options:MTTheme_UIViewKeyframeAnimationOption animations:^{
+        [self executeElementWithElementModels:self.imageElements handler:^(MTElementModel *element) {
+            if (![imageStrs containsObject:element.identifier]) {
+                return;
+            }
+            NSString *imagePath = [moduleName stringByAppendingPathComponent:element.identifier];
+            UIImage *image = [UIImage imageNamed:imagePath inBundle:[NSBundle bundleWithPath:bundlePath] compatibleWithTraitCollection:nil];
+            
             [MTThemePerformSelector performSelector:element.selector view:element.view object:image extendObj:element.extendObj];
-        } completion:nil];
-    }];
+        }];
+    } completion:nil];
 }
 
 #pragma mark - Private

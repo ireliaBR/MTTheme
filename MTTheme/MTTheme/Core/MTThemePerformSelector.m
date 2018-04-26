@@ -24,7 +24,9 @@
     if (extendObj == nil) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [view performSelector:aSelector withObject:object];
+        if ([view respondsToSelector:aSelector]) {
+            [view performSelector:aSelector withObject:object];
+        }
 #pragma clang diagnostic pop
         return;
     }
@@ -60,7 +62,9 @@
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    [view performSelector:aSelector withObject:object];
+    if ([view respondsToSelector:aSelector]) {
+        [view performSelector:aSelector withObject:object];
+    }
 #pragma clang diagnostic pop
 }
 
