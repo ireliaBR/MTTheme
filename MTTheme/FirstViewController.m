@@ -80,9 +80,14 @@
 - (void)setupFont {
     
     CFAbsoluteTime fontStartTime = CFAbsoluteTimeGetCurrent();
-    [self.label theme_setTextIdentifier:@"FirstViewController.title.text" moduleName:@"homepage"];
-    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.normal" forState:UIControlStateNormal moduleName:@"homepage"];
-    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.highlighted" forState:UIControlStateHighlighted moduleName:@"homepage"];
+    [self.label theme_setTextIdentifier:@"FirstViewController.title.text"
+                             moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.normal"
+                                   forState:UIControlStateNormal
+                                 moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.highlighted"
+                                   forState:UIControlStateHighlighted
+                                 moduleName:@"homepage"];
     CFAbsoluteTime fontEndTime = CFAbsoluteTimeGetCurrent();
     MTTheme_Log(@"[During]字体设置事件 during in %f seconds.", (fontStartTime - fontEndTime));
 }

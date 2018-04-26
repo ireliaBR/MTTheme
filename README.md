@@ -136,9 +136,14 @@ MTTheme
 4. 视图注册字体内容
 
 ```objc
-	[self.label theme_setTextIdentifier:@"FirstViewController.title.text" moduleName:@"homepage"];
-    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.normal" forState:UIControlStateNormal moduleName:@"homepage"];
-    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.highlighted" forState:UIControlStateHighlighted moduleName:@"homepage"];
+	[self.label theme_setTextIdentifier:@"FirstViewController.title.text"
+                             moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.normal"
+                                   forState:UIControlStateNormal
+                                 moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.highlighted"
+                                   forState:UIControlStateHighlighted
+                                 moduleName:@"homepage"];
 ```
 
 5. 字体内容的切换
