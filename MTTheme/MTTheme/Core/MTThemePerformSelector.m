@@ -22,7 +22,10 @@
 #pragma mark - Public
 + (void)performSelector:(SEL)aSelector view:(UIView *)view object:(id)object extendObj:(id)extendObj {
     if (extendObj == nil) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         [view performSelector:aSelector withObject:object];
+#pragma clang diagnostic pop
         return;
     }
     NSString *aSelectorStr = NSStringFromSelector(aSelector);
@@ -55,8 +58,10 @@
         return;
     }
     
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [view performSelector:aSelector withObject:object];
+#pragma clang diagnostic pop
 }
 
 
