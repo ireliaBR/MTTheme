@@ -112,9 +112,9 @@ static MTThemeManager *manager;
     self.colorDict = [colorDict copy];
     self.imageDict = [imageDict copy];
     
-//    MTTheme_Log(@"\nTheme文件夹解析结果: ");
-//    MTTheme_Log(@"%@", self.colorDict);
-//    MTTheme_Log(@"%@", self.imageDict);
+    MTTheme_Log(@"\nTheme文件夹解析结果: ");
+    MTTheme_Log(@"%@", self.colorDict);
+    MTTheme_Log(@"%@", self.imageDict);
     
     //遍历moduleTableDict， 传入imageDict 和 colorDict
     [self refreshModuleTableDict];
