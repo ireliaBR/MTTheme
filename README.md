@@ -81,8 +81,8 @@ MTTheme
 2. 初始化
 
 ```objc
-	//主题模块初始化
-	NSString *path = [NSBundle mainBundle].bundlePath;
+//主题模块初始化
+NSString *path = [NSBundle mainBundle].bundlePath;
     NSString *themePath = [path stringByAppendingPathComponent:@"Theme/Theme1"];
     [MTThemeManager initializeWithDefaultThemePath:themePath];
     
@@ -94,7 +94,7 @@ MTTheme
 2. 视图注册颜色和图片
 
 ```objc
-	[self.label theme_setBackgroundColorIdentifier:@"label.background"
+[self.label theme_setBackgroundColorIdentifier:@"label.background"
                                         moduleName:@"homepage"];
     [self.label theme_setTextColorIdentifier:@"label.text"
                                   moduleName:@"homepage"];
@@ -127,7 +127,7 @@ MTTheme
 3. 主题皮肤的切换
 
 ```objc
-	NSString *path = [NSBundle mainBundle].bundlePath;
+NSString *path = [NSBundle mainBundle].bundlePath;
     path = [path stringByAppendingPathComponent:@"Theme"];
     path = [path stringByAppendingPathComponent:@"Theme2"];
     [MTThemeManager.manager setThemePath:path];
@@ -136,7 +136,7 @@ MTTheme
 4. 视图注册字体内容
 
 ```objc
-	[self.label theme_setTextIdentifier:@"FirstViewController.title.text"
+[self.label theme_setTextIdentifier:@"FirstViewController.title.text"
                              moduleName:@"homepage"];
     [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.normal"
                                    forState:UIControlStateNormal
@@ -149,7 +149,7 @@ MTTheme
 5. 字体内容的切换
 
 ```objc
-	NSString *path = [NSBundle mainBundle].bundlePath;
+NSString *path = [NSBundle mainBundle].bundlePath;
     path = [path stringByAppendingPathComponent:@"Font"];
     path = [path stringByAppendingPathComponent:@"Font1"];
     [MTFontManager.manager setFontPath:path];
@@ -168,7 +168,7 @@ MTTheme
 3. 通过添加 `CFAbsoluteTimeGetCurrent()` 计算方法运行时间
 
 ```objc
-	//主题模块初始化
+//主题模块初始化
     CFAbsoluteTime themeStartTime = CFAbsoluteTimeGetCurrent();
     NSString *path = [NSBundle mainBundle].bundlePath;
     NSString *themePath = [path stringByAppendingPathComponent:@"Theme/Theme2"];
