@@ -8,10 +8,15 @@ MTTheme
 * [设计结构](#设计结构)
   * [文件结构](#文件结构)
   * [类图结构](#类图结构)
+* [使用方式](#使用方式)
+* [加载性能评测](#加载性能评测)
+* [优化](#优化)
+* [后续优化](#后续优化)
+* [结语](#结语)
   
 ## 简述
+主题皮肤和字体内容的动态切换方案
 ### 模块功能
-
 * 通过 `MTThemeManager` 设置主题路径，可以动态的进行主题切换
 * 通过 `MTFontManager` 设置文字路径，可以动态的进行文字的切换, 类似国际化
 
@@ -69,6 +74,82 @@ MTTheme
 * `textPickerWithView:selector:moduleName:identifier:extendObj:` 视图的text设置
 
 ## 使用方式
+1. pod导入
+```ruby
+	pod 'MTTheme', git => 'https://github.com/ireliaBR/MTTheme.git'
+```
+2. 初始化
+
+```objc
+	//主题模块初始化
+	NSString *path = [NSBundle mainBundle].bundlePath;
+    NSString *themePath = [path stringByAppendingPathComponent:@"Theme/Theme1"];
+    [MTThemeManager initializeWithDefaultThemePath:themePath];
+    
+	//字体模块初始化
+    NSString *fontPath = [path stringByAppendingPathComponent:@"Font/Font2"];
+    [MTFontManager initializeWithDefaultFontPath:fontPath];
+```
+
+2. 视图注册颜色和图片
+
+```objc
+	[self.label theme_setBackgroundColorIdentifier:@"label.background"
+                                        moduleName:@"homepage"];
+    [self.label theme_setTextColorIdentifier:@"label.text"
+                                  moduleName:@"homepage"];
+    
+    [self.colorBtn theme_setTitleColorIdentifier:@"colorBtn.title.normal"
+                                        forState:UIControlStateNormal
+                                      moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleColorIdentifier:@"colorBtn.title.highlighted"
+                                        forState:UIControlStateHighlighted
+                                      moduleName:@"homepage"];
+    
+    [self.bgColorView theme_setBackgroundColorIdentifier:@"bgColorView.background"
+                                              moduleName:@"homepage"];
+    
+    [self.imageBtn theme_setImageIdentifier:@"icon_homepage_image"
+                                   forState:UIControlStateNormal
+                                 moduleName:@"homepage"];
+    
+    [self.bgImageBtn theme_setBackgroundImageIdentifier:@"icon_homepage_image"
+                                               forState:UIControlStateNormal
+                                             moduleName:@"homepage"];
+    
+    [self.textField theme_setTextColorIdentifier:@"textField.textColor"
+                                      moduleName:@"homepage"];
+    
+    [self.imageView theme_setImageIdentifier:@"icon_homepage_image"
+                                  moduleName:@"homepage"];
+```
+
+3. 主题皮肤的切换
+
+```objc
+	NSString *path = [NSBundle mainBundle].bundlePath;
+    path = [path stringByAppendingPathComponent:@"Theme"];
+    path = [path stringByAppendingPathComponent:@"Theme2"];
+    [MTThemeManager.manager setThemePath:path];
+```
+
+4. 视图注册字体内容
+
+```objc
+	[self.label theme_setTextIdentifier:@"FirstViewController.title.text" moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.normal" forState:UIControlStateNormal moduleName:@"homepage"];
+    [self.colorBtn theme_setTitleIdentifier:@"FirstViewController.colorBtn.text.highlighted" forState:UIControlStateHighlighted moduleName:@"homepage"];
+```
+
+5. 字体内容的切换
+
+```objc
+	NSString *path = [NSBundle mainBundle].bundlePath;
+    path = [path stringByAppendingPathComponent:@"Font"];
+    path = [path stringByAppendingPathComponent:@"Font1"];
+    [MTFontManager.manager setFontPath:path];
+```
+	
 ## 加载性能评测
 ## 优化
 * 在 `MTThemeManger` 和 `MTFontManager` 添加了定时器，每10秒会对每个模块的 `ElementModels` 中 `view` 为 `nil` 的对象进行清空。
@@ -78,4 +159,4 @@ MTTheme
 > 加载主题数据时采用延迟加载，分模块加载
 
 ## 结语
-您的star，是我前进的动力^_^
+> 您的star，是我前进的动力^_^
