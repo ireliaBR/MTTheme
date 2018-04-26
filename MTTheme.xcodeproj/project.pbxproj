@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6441AF7C2090501800368E7D /* MTThemePerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441AF7B2090501800368E7D /* MTThemePerformSelector.m */; };
+		647BCFD020907C2400D221A7 /* MTFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 647BCFCF20907C2400D221A7 /* MTFontManager.m */; };
+		647BCFD220907C8D00D221A7 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 647BCFD120907C8D00D221A7 /* Font */; };
+		647BCFDA20907DEC00D221A7 /* MTFontTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 647BCFD920907DEC00D221A7 /* MTFontTable.m */; };
+		647BCFDD20907ED300D221A7 /* MTBaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 647BCFDC20907ED300D221A7 /* MTBaseTable.m */; };
+		647BCFE02090987F00D221A7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647BCFDF2090987F00D221A7 /* RootViewController.m */; };
+		64DDC757208F0C15004CA79E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC756208F0C15004CA79E /* AppDelegate.m */; };
+		64DDC75A208F0C15004CA79E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC759208F0C15004CA79E /* FirstViewController.m */; };
+		64DDC75D208F0C15004CA79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DDC75B208F0C15004CA79E /* Main.storyboard */; };
+		64DDC75F208F0C16004CA79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DDC75E208F0C16004CA79E /* Assets.xcassets */; };
+		64DDC762208F0C16004CA79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DDC760208F0C16004CA79E /* LaunchScreen.storyboard */; };
+		64DDC765208F0C16004CA79E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC764208F0C16004CA79E /* main.m */; };
+		64DDC76E208F0C7A004CA79E /* MTThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC76D208F0C7A004CA79E /* MTThemeManager.m */; };
+		64DDC771208F0C90004CA79E /* MTElementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC770208F0C90004CA79E /* MTElementModel.m */; };
+		64DDC793208F170A004CA79E /* MTThemeTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC792208F170A004CA79E /* MTThemeTable.m */; };
+		64DDC79D20901E05004CA79E /* MTThemeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC79C20901E05004CA79E /* MTThemeBlock.m */; };
+		64F07B712090630B00C3310C /* MTThemeManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 64DDC76C208F0C7A004CA79E /* MTThemeManager.h */; };
+		64F07B772090658800C3310C /* UIView+MTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F07B762090658800C3310C /* UIView+MTTheme.m */; };
+		64F07B7A209065F100C3310C /* UILabel+MTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F07B79209065F100C3310C /* UILabel+MTTheme.m */; };
+		64F07B7D209066A900C3310C /* UIButton+MTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F07B7C209066A900C3310C /* UIButton+MTTheme.m */; };
+		64F07B802090673F00C3310C /* UIImageView+MTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F07B7F2090673F00C3310C /* UIImageView+MTTheme.m */; };
+		64F07B832090677E00C3310C /* UITextField+MTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F07B822090677E00C3310C /* UITextField+MTTheme.m */; };
+		64F07B862090679E00C3310C /* UITextView+MTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F07B852090679E00C3310C /* UITextView+MTTheme.m */; };
+		64F07B8920907AB300C3310C /* Theme in Resources */ = {isa = PBXBuildFile; fileRef = 64F07B8820907AB300C3310C /* Theme */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6441AF7A2090501800368E7D /* MTThemePerformSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTThemePerformSelector.h; sourceTree = "<group>"; };
+		6441AF7B2090501800368E7D /* MTThemePerformSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTThemePerformSelector.m; sourceTree = "<group>"; };
+		647BCFCE20907C2400D221A7 /* MTFontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFontManager.h; sourceTree = "<group>"; };
+		647BCFCF20907C2400D221A7 /* MTFontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFontManager.m; sourceTree = "<group>"; };
+		647BCFD120907C8D00D221A7 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
+		647BCFD820907DEC00D221A7 /* MTFontTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFontTable.h; sourceTree = "<group>"; };
+		647BCFD920907DEC00D221A7 /* MTFontTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFontTable.m; sourceTree = "<group>"; };
+		647BCFDB20907ED300D221A7 /* MTBaseTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBaseTable.h; sourceTree = "<group>"; };
+		647BCFDC20907ED300D221A7 /* MTBaseTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBaseTable.m; sourceTree = "<group>"; };
+		647BCFDE2090987F00D221A7 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		647BCFDF2090987F00D221A7 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		64DDC752208F0C15004CA79E /* MTTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DDC755208F0C15004CA79E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64DDC756208F0C15004CA79E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64DDC758208F0C15004CA79E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		64DDC759208F0C15004CA79E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		64DDC75C208F0C15004CA79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64DDC75E208F0C16004CA79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64DDC761208F0C16004CA79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64DDC763208F0C16004CA79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DDC764208F0C16004CA79E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64DDC76C208F0C7A004CA79E /* MTThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTThemeManager.h; sourceTree = "<group>"; };
+		64DDC76D208F0C7A004CA79E /* MTThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTThemeManager.m; sourceTree = "<group>"; };
+		64DDC76F208F0C90004CA79E /* MTElementModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTElementModel.h; sourceTree = "<group>"; };
+		64DDC770208F0C90004CA79E /* MTElementModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTElementModel.m; sourceTree = "<group>"; };
+		64DDC791208F170A004CA79E /* MTThemeTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTThemeTable.h; sourceTree = "<group>"; };
+		64DDC792208F170A004CA79E /* MTThemeTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTThemeTable.m; sourceTree = "<group>"; };
+		64DDC79A208F2711004CA79E /* MTThemeDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTThemeDefinition.h; sourceTree = "<group>"; };
+		64DDC79B20901E05004CA79E /* MTThemeBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTThemeBlock.h; sourceTree = "<group>"; };
+		64DDC79C20901E05004CA79E /* MTThemeBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTThemeBlock.m; sourceTree = "<group>"; };
+		64F07B752090658800C3310C /* UIView+MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MTTheme.h"; sourceTree = "<group>"; };
+		64F07B762090658800C3310C /* UIView+MTTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTTheme.m"; sourceTree = "<group>"; };
+		64F07B78209065F100C3310C /* UILabel+MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+MTTheme.h"; sourceTree = "<group>"; };
+		64F07B79209065F100C3310C /* UILabel+MTTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MTTheme.m"; sourceTree = "<group>"; };
+		64F07B7B209066A900C3310C /* UIButton+MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MTTheme.h"; sourceTree = "<group>"; };
+		64F07B7C209066A900C3310C /* UIButton+MTTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MTTheme.m"; sourceTree = "<group>"; };
+		64F07B7E2090673F00C3310C /* UIImageView+MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MTTheme.h"; sourceTree = "<group>"; };
+		64F07B7F2090673F00C3310C /* UIImageView+MTTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MTTheme.m"; sourceTree = "<group>"; };
+		64F07B812090677E00C3310C /* UITextField+MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+MTTheme.h"; sourceTree = "<group>"; };
+		64F07B822090677E00C3310C /* UITextField+MTTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MTTheme.m"; sourceTree = "<group>"; };
+		64F07B842090679E00C3310C /* UITextView+MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+MTTheme.h"; sourceTree = "<group>"; };
+		64F07B852090679E00C3310C /* UITextView+MTTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+MTTheme.m"; sourceTree = "<group>"; };
+		64F07B8720906C8800C3310C /* MTTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTheme.h; sourceTree = "<group>"; };
+		64F07B8820907AB300C3310C /* Theme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Theme; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64DDC74F208F0C15004CA79E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		647BCFD320907D6A00D221A7 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				64DDC76C208F0C7A004CA79E /* MTThemeManager.h */,
+				64DDC76D208F0C7A004CA79E /* MTThemeManager.m */,
+				64DDC791208F170A004CA79E /* MTThemeTable.h */,
+				64DDC792208F170A004CA79E /* MTThemeTable.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		647BCFD420907DA900D221A7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				647BCFCE20907C2400D221A7 /* MTFontManager.h */,
+				647BCFCF20907C2400D221A7 /* MTFontManager.m */,
+				647BCFD820907DEC00D221A7 /* MTFontTable.h */,
+				647BCFD920907DEC00D221A7 /* MTFontTable.m */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		64DDC749208F0C14004CA79E = {
+			isa = PBXGroup;
+			children = (
+				64DDC754208F0C15004CA79E /* MTTheme */,
+				64DDC753208F0C15004CA79E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64DDC753208F0C15004CA79E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64DDC752208F0C15004CA79E /* MTTheme.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64DDC754208F0C15004CA79E /* MTTheme */ = {
+			isa = PBXGroup;
+			children = (
+				647BCFD120907C8D00D221A7 /* Font */,
+				64F07B8820907AB300C3310C /* Theme */,
+				64DDC76B208F0C26004CA79E /* MTTheme */,
+				64DDC755208F0C15004CA79E /* AppDelegate.h */,
+				64DDC756208F0C15004CA79E /* AppDelegate.m */,
+				64DDC758208F0C15004CA79E /* FirstViewController.h */,
+				64DDC759208F0C15004CA79E /* FirstViewController.m */,
+				647BCFDE2090987F00D221A7 /* RootViewController.h */,
+				647BCFDF2090987F00D221A7 /* RootViewController.m */,
+				64DDC75B208F0C15004CA79E /* Main.storyboard */,
+				64DDC75E208F0C16004CA79E /* Assets.xcassets */,
+				64DDC760208F0C16004CA79E /* LaunchScreen.storyboard */,
+				64DDC763208F0C16004CA79E /* Info.plist */,
+				64DDC764208F0C16004CA79E /* main.m */,
+			);
+			path = MTTheme;
+			sourceTree = "<group>";
+		};
+		64DDC76B208F0C26004CA79E /* MTTheme */ = {
+			isa = PBXGroup;
+			children = (
+				64F07B8720906C8800C3310C /* MTTheme.h */,
+				64F07B742090657400C3310C /* Categorys */,
+				64F07B732090656600C3310C /* Core */,
+			);
+			path = MTTheme;
+			sourceTree = "<group>";
+		};
+		64F07B732090656600C3310C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				647BCFD420907DA900D221A7 /* Font */,
+				647BCFD320907D6A00D221A7 /* Theme */,
+				64DDC76F208F0C90004CA79E /* MTElementModel.h */,
+				64DDC770208F0C90004CA79E /* MTElementModel.m */,
+				64DDC79A208F2711004CA79E /* MTThemeDefinition.h */,
+				64DDC79B20901E05004CA79E /* MTThemeBlock.h */,
+				64DDC79C20901E05004CA79E /* MTThemeBlock.m */,
+				6441AF7A2090501800368E7D /* MTThemePerformSelector.h */,
+				6441AF7B2090501800368E7D /* MTThemePerformSelector.m */,
+				647BCFDB20907ED300D221A7 /* MTBaseTable.h */,
+				647BCFDC20907ED300D221A7 /* MTBaseTable.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		64F07B742090657400C3310C /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				64F07B752090658800C3310C /* UIView+MTTheme.h */,
+				64F07B762090658800C3310C /* UIView+MTTheme.m */,
+				64F07B78209065F100C3310C /* UILabel+MTTheme.h */,
+				64F07B79209065F100C3310C /* UILabel+MTTheme.m */,
+				64F07B7B209066A900C3310C /* UIButton+MTTheme.h */,
+				64F07B7C209066A900C3310C /* UIButton+MTTheme.m */,
+				64F07B7E2090673F00C3310C /* UIImageView+MTTheme.h */,
+				64F07B7F2090673F00C3310C /* UIImageView+MTTheme.m */,
+				64F07B812090677E00C3310C /* UITextField+MTTheme.h */,
+				64F07B822090677E00C3310C /* UITextField+MTTheme.m */,
+				64F07B842090679E00C3310C /* UITextView+MTTheme.h */,
+				64F07B852090679E00C3310C /* UITextView+MTTheme.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64DDC751208F0C15004CA79E /* MTTheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DDC768208F0C16004CA79E /* Build configuration list for PBXNativeTarget "MTTheme" */;
+			buildPhases = (
+				64DDC74E208F0C15004CA79E /* Sources */,
+				64DDC74F208F0C15004CA79E /* Frameworks */,
+				64DDC750208F0C15004CA79E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTTheme;
+			productName = MTTheme;
+			productReference = 64DDC752208F0C15004CA79E /* MTTheme.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64DDC74A208F0C14004CA79E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = meitu;
+				TargetAttributes = {
+					64DDC751208F0C15004CA79E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 64DDC74D208F0C14004CA79E /* Build configuration list for PBXProject "MTTheme" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64DDC749208F0C14004CA79E;
+			productRefGroup = 64DDC753208F0C15004CA79E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64DDC751208F0C15004CA79E /* MTTheme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64DDC750208F0C15004CA79E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647BCFD220907C8D00D221A7 /* Font in Resources */,
+				64F07B8920907AB300C3310C /* Theme in Resources */,
+				64DDC762208F0C16004CA79E /* LaunchScreen.storyboard in Resources */,
+				64DDC75F208F0C16004CA79E /* Assets.xcassets in Resources */,
+				64DDC75D208F0C15004CA79E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64DDC74E208F0C15004CA79E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F07B712090630B00C3310C /* MTThemeManager.h in Sources */,
+				647BCFE02090987F00D221A7 /* RootViewController.m in Sources */,
+				64DDC75A208F0C15004CA79E /* FirstViewController.m in Sources */,
+				64DDC765208F0C16004CA79E /* main.m in Sources */,
+				64DDC771208F0C90004CA79E /* MTElementModel.m in Sources */,
+				647BCFDD20907ED300D221A7 /* MTBaseTable.m in Sources */,
+				64F07B802090673F00C3310C /* UIImageView+MTTheme.m in Sources */,
+				64F07B862090679E00C3310C /* UITextView+MTTheme.m in Sources */,
+				64F07B7A209065F100C3310C /* UILabel+MTTheme.m in Sources */,
+				6441AF7C2090501800368E7D /* MTThemePerformSelector.m in Sources */,
+				64F07B772090658800C3310C /* UIView+MTTheme.m in Sources */,
+				64DDC793208F170A004CA79E /* MTThemeTable.m in Sources */,
+				64DDC76E208F0C7A004CA79E /* MTThemeManager.m in Sources */,
+				64F07B832090677E00C3310C /* UITextField+MTTheme.m in Sources */,
+				64DDC79D20901E05004CA79E /* MTThemeBlock.m in Sources */,
+				647BCFDA20907DEC00D221A7 /* MTFontTable.m in Sources */,
+				647BCFD020907C2400D221A7 /* MTFontManager.m in Sources */,
+				64F07B7D209066A900C3310C /* UIButton+MTTheme.m in Sources */,
+				64DDC757208F0C15004CA79E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		64DDC75B208F0C15004CA79E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DDC75C208F0C15004CA79E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64DDC760208F0C16004CA79E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DDC761208F0C16004CA79E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64DDC766208F0C16004CA79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64DDC767208F0C16004CA79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64DDC769208F0C16004CA79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM28RBP83N;
+				INFOPLIST_FILE = MTTheme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.MTTheme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64DDC76A208F0C16004CA79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RM28RBP83N;
+				INFOPLIST_FILE = MTTheme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.MTTheme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64DDC74D208F0C14004CA79E /* Build configuration list for PBXProject "MTTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DDC766208F0C16004CA79E /* Debug */,
+				64DDC767208F0C16004CA79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DDC768208F0C16004CA79E /* Build configuration list for PBXNativeTarget "MTTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DDC769208F0C16004CA79E /* Debug */,
+				64DDC76A208F0C16004CA79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64DDC74A208F0C14004CA79E /* Project object */;
+}

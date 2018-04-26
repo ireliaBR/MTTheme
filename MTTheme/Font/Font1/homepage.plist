@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FirstViewController.title.text</key>
+	<string>你好</string>
+	<key>FirstViewController.colorBtn.text.normal</key>
+	<string>请点击我</string>
+	<key>FirstViewController.colorBtn.text.highlighted</key>
+	<string>你点击了我</string>
+</dict>
+</plist>
