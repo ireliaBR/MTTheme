@@ -156,12 +156,66 @@ MTTheme
 ```
 	
 ## 加载性能评测
+1. 环境：
+
+```objc
+	设备：iphone6 plus
+	系统：iOS 11.3
+```
+	
+1. 在Font2的 `homepage.plist` 下添加了1500条记录，在Theme2下 `color.plist` 添加了1500条记录和3000张图片
+2. 通过添加 `CFAbsoluteTimeGetCurrent()` 计算方法运行时间
+
+```objc
+	//主题模块初始化
+    CFAbsoluteTime themeStartTime = CFAbsoluteTimeGetCurrent();
+    NSString *path = [NSBundle mainBundle].bundlePath;
+    NSString *themePath = [path stringByAppendingPathComponent:@"Theme/Theme2"];
+    [MTThemeManager initializeWithDefaultThemePath:themePath];
+    CFAbsoluteTime themeEndTime = CFAbsoluteTimeGetCurrent();
+    MTTheme_Log(@"[During]主题注册事件 during in %f seconds.", (themeStartTime - themeEndTime));
+    
+    //字体模块初始化
+    CFAbsoluteTime fontStartTime = CFAbsoluteTimeGetCurrent();
+    NSString *fontPath = [path stringByAppendingPathComponent:@"Font/Font2"];
+    [MTFontManager initializeWithDefaultFontPath:fontPath];
+    CFAbsoluteTime fontEndTime = CFAbsoluteTimeGetCurrent();
+    MTTheme_Log(@"[During]字体注册事件 during in %f seconds.", (fontStartTime - fontEndTime));
+```
+
+3. 测试结果
+
+* 第一次
+
+```objc
+[During]主题注册事件 during in -0.355088 seconds.
+[During]字体注册事件 during in -0.023626 seconds.
+```
+* 第二次
+
+```objc
+[During]主题注册事件 during in -0.350668 seconds.
+[During]字体注册事件 during in -0.023880 seconds.
+```
+* 第三次
+
+```objc
+[During]主题注册事件 during in -0.350668 seconds.
+[During]字体注册事件 during in -0.023880 seconds.
+```
+
+4. 结论
+
+* 在加载字体内容时，只需要加载 `plist` 文件，稳定在23毫秒
+* 在加载主题时，不仅需要加载 `plist` 文件，还需要遍历列表生成image对应的列表
+* 在遍历图片列表时，耗时太长
+
 ## 优化
 * 在 `MTThemeManger` 和 `MTFontManager` 添加了定时器，每10秒会对每个模块的 `ElementModels` 中 `view` 为 `nil` 的对象进行清空。
 * 每次改变主题时也会对对每个模块的 `ElementModels` 中 `view` 为 `nil` 的对象进行清空
 
 ## 后续优化
-* 加载主题数据时采用延迟加载，分模块加载
+* 加载主题数据时由于图片数量太多，可以采用延迟加载、分模块加载
 * 图片的contentMode动态配置
 
 ## 结语
