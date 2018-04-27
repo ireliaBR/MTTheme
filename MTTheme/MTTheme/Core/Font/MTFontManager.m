@@ -120,8 +120,8 @@ static MTFontManager *manager;
     
     self.fontDict = [fontDict copy];
     
-    MTTheme_Log(@"\nFont文件夹解析结果: ");
-    MTTheme_Log(@"%@", self.fontDict);
+//    MTTheme_Log(@"\nFont文件夹解析结果: ");
+//    MTTheme_Log(@"%@", self.fontDict);
     
     //遍历moduleFontDict， 传入fontDict
     [self refreshModuleFontDict];

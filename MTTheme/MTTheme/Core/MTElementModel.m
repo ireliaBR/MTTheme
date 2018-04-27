@@ -11,7 +11,7 @@
 @implementation MTElementModel
 #pragma mark - Lifecycle
 - (void)dealloc {
-    MTTheme_Log(@"%s", __func__);
+//    MTTheme_Log(@"%s", __func__);
 }
 
 - (instancetype)initWithSelector:(SEL)selector
