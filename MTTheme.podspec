@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTTheme'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '组件化设计，主题国际化模块'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/ireliaBR/MTTheme'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '672575302@qq.com' => '672575302@qq.com' }
+  s.author           = { 'irelia' => '672575302@qq.com' }
   s.source           = { :git => 'https://github.com/ireliaBR/MTTheme.git', :tag => s.version.to_s }
 
 
